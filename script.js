@@ -30,7 +30,7 @@ function displayLetters() {
   const interval = setInterval(() => {
     if (index >= phrase.length) {
       clearInterval(interval);
-      setTimeout(displayLetters, 2000); // Wait for 2 seconds before starting again
+      setTimeout(displayLetters, 4000); 
       return;
     }
 
@@ -116,7 +116,7 @@ window.addEventListener("load", function () {
     block2.textContent = newQuote[(index + 1) % newQuote.length];
     block3.textContent = newQuote[(index + 2) % newQuote.length];
     index = (index + 8) % newQuote.length;
-  }, 3000);
+  }, 6000);
 
   clearInterval(flipCite);
   flipCite = setInterval(() => {
@@ -124,7 +124,7 @@ window.addEventListener("load", function () {
     cite2.textContent = newCite[(index + 1) % newQuote.length];
     cite3.textContent = newCite[(index + 2) % newQuote.length];
     index = (index + 8) % newCite.length;
-  }, 3000);
+  }, 6000);
 
   clearInterval(flipImg);
   flipImg = setInterval(() => {
@@ -132,5 +132,5 @@ window.addEventListener("load", function () {
     img2.src = newImg[(index + 1) % newImg.length].url;
     img3.src = newImg[(index + 2) % newImg.length].url;
     index = (index + 8) % newImg.length;
-  }, 3000);
+  }, 6000);
 });
