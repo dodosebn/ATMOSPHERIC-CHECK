@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  ul {
+    font-size: 18px;
+  }
+
+  .fa-arrow-left{
+    font-size: 2em;
+}
+    @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+        .fa-arrow-left{
+            font-size: 1em;
+        }
+      }

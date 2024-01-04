@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="stylle.css" />
+    <title>Weather App Form</title>
+  </head>
+  <body>
+    <div class="Arrow-left">
+      <span><i class="fa-solid fa-arrow-left"></i></span>
+    </div>
+    <div class="error">
+      <p id="TopError"></p>
+    </div>
+
+    <section class="signUp-cont">
+      <div class="signUp-hold">
+        <form id="signup-form">
+          <h2><i class="fa-solid fa-paper-plane"></i>Signup</h2>
+          <br /><br />
+          <div class="form-group">
+            <label for="name"><i class="fa-solid fa-users"></i>Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name" />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email" />
+          </div>
+          <div class="form-group">
+            <label for="username"
+              ><i class="fa-solid fa-user"></i>Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username" />
+          </div>
+          <div class="form-group">
+            <label for="password"
+              ><i class="fa-solid fa-key"></i>Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password" />
+          </div>
+          <div class="form-group">
+            <label for="city"
+              ><i class="fa-solid fa-address-book"></i>City</label
+            >
+            <input
+              type="text"
+              id="city"
+              name="city" />
+          </div>
+          <button
+            type="submit"
+            id="signupBtn">
+            Signup
+          </button>
+        </form>
+        <p id="nextPage"><a onclick="toggleForms();">VIEW LOGIN PAGE</a></p>
+      </div>
+    </section>
+
+    <section
+      class="login-Cont"
+      style="display: none">
+      <div class="login-hold">
+        <form
+          id="login-form"
+          onsubmit="loginVal(event);">
+          <h2><i class="fa-solid fa-paper-plane"></i>Login</h2>
+          <div class="form-group">
+            <label for="login-username"
+              ><i class="fa-solid fa-users"></i>Username</label
+            >
+            <input
+              type="text"
+              id="login-username"
+              name="login-username" />
+          </div>
+          <div class="form-group">
+            <label for="login-email"
+              ><i class="fa-solid fa-envelope"></i>Email</label
+            >
+            <input
+              type="email"
+              id="login-email"
+              name="login-email" />
+          </div>
+          <div class="form-group">
+            <label for="login-password"
+              ><i class="fa-solid fa-key"></i>Password</label
+            >
+            <input
+              type="password"
+              id="login-password"
+              name="login-password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p id="nextPage"><a onclick="toggleForms();">VIEW SIGNUP PAGE</a></p>
+      </div>
+    </section>
+    <script src="form.js"></script>
+  </body>
+</html>

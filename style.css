@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)) ,url('./images/Rain.jpg');
+    object-fit: cover;
+    background-color: red;
+    background-position: right;
+    /* background-repeat: no-repeat; */
+    height: 20em;
+    background-size: cover;
+}
+@import url("https://fonts.google apis.com/css2.family=Shrikhand&display=swap");
+ 
+:root{
+    --primary-color: #15204e;
+    --secondary-color: #32335b;
+}
+.menubar H1{
+    padding: 10px;
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+   
+}
+.menubar H1 i{
+    color: rgba(0,0,50,0.8);
+}
+.menubar ul{
+    display: inline-flex;
+    width:90%;
+    justify-content: space-evenly;
+    }
+    .menubar ul li{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* padding: 10px; */
+    }
+    .menubar  ul li a{
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 13px;
+    }
+    .menubar  ul li a:hover{
+    background: var( --secondary-color);
+    border-radius: 30px;
+    animation: vibrateAnimation 0.1s normal;
+    text-shadow: 2px 2px 5px red;
+    }
+    @keyframes vibrateAnimation {
+        0% { transform: translate(0, 0); }
+        20% { transform: translate(-5px, 5px); }
+        40% { transform: translate(5px, -5px); }
+        60% { transform: translate(-5px, -5px); }
+        80% { transform: translate(5px, 5px); }
+        100% { transform: translate(0, 0); }
+      }
+      .message-cont, .message-hold{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      }
+     
+      .letter {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+      
+      .space {
+        display: inline-block;
+        width: 0.5em;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .Quoted-Cont, .Quoted-hold {
+        background: var(--primary-color);
+        color: white;
+        height: 40em;
+      }
+      cite{
+        font-size: 20px;
+      }
+      .Quoted-Cont li {
+        background: var( --secondary-color);;
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 3em auto ;
+        border-radius: 1em;
+        list-style: none;
+      }
+      
+      .Quoted-Cont li img {
+        width: 5em;
+        height: 5em;
+        border: 5px solid var( --secondary-color);;
+        border-radius: 50%;
+        margin-top: -4.5em;
+      }
+      
+@media (max-width:480px)  { 
+    body{
+        background-repeat: no-repeat;
+        height: 50em;
+    }
+    .meubar ul, li{
+        width: 100%;
+    }
+
+    #letter-container {
+      position: absolute;
+      width: 100%;
+     left: 20px;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      font-size: 16px;
+    }
+}
