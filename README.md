@@ -21,7 +21,7 @@ Click the search button to retrieve the weather information for the entered city
 The temperature, humidity, city name, and wind speed will be displayed on the webpage.
 Depending on the temperature, sentences related to the weather (sunny, rainy, or none) will be displayed one by one at a 2-second interval.
 ## Appreciation
-We would like to express my heartfelt appreciation to Egwu Florence and Sir Obi Fortune for their contributions to this Weather App. 
+I would like to express my heartfelt appreciation to Egwu Florence and Sir Obi Fortune for their contributions to this Weather App. 
 Their dedication, hard work, and expertise have been instrumental in bringing this project to life. 
  Their collaborative efforts and commitment to excellence have greatly contributed to the success of this project.
 
