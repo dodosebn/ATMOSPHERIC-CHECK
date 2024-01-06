@@ -7,15 +7,17 @@
 body{
     background: #222;
 }
-.fa-arrow-left{
-    font-size: 2em;
-}
+    .fa-arrow-left{
+        font-size: 2em;
+        color: #000;
+        text-shadow: 2px 5px 5px red;
+    }
 .card{
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -87,10 +89,11 @@ cursor: pointer;
 
 @media(max-width: 100px){
     .card{
-        width: 70%;
+        width: 100%;
         max-width: 300px;
-        margin: 25px auto 0;
-        padding: 20px 18px;
+        /* margin-bottom: 50em; */
+        /* margin: 25px auto 0; */
+        /* padding: 10px 18px; */
     }
     .search input{
         padding: 5px 10px;

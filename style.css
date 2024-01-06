@@ -16,7 +16,7 @@ body {
   height: 20em;
   background-size: cover;
 }
-@import url("https://fonts.google apis.com/css2.family=Shrikhand&display=swap");
+
 
 :root {
   --primary-color: #15204e;
@@ -31,11 +31,12 @@ body {
 }
 .menubar H1 {
   padding: 10px;
-  font-family: "Shrikhand", cursive;
+  font-family: 'Times New Roman', serif;
   font-size: 30px;
 }
 .menubar H1 i {
   color: rgba(0, 0, 50, 0.8);
+  
 }
 .menubar ul {
   display: inline-flex;

@@ -11,9 +11,11 @@
     }
     .fa-arrow-left{
         font-size: 2em;
+        color: #000;
+        text-shadow: 2px 3px 5px red;
     }
     .inputError{
-            border: 1px solid red;
+            border: 2px solid red;
     }
     .error{
         display: flex;
@@ -105,14 +107,14 @@ form {
 
   @media (max-width: 600px) {
     .signUp-cont,
-    .login-Cont {
+    .login-Cont{
       position: relative;
       left: 0;
       top: 0;
-      margin: 2em auto;
+      /* width: auto; */
     }
-    .signUp-hold,
-    .login-hold {
+    .login-hold,
+    .signUp-hold {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -120,7 +122,7 @@ form {
       background-color: #fff;
       height: auto;
       width: 90%;
-      left: 3em;
+      left: 1em;
     }
     h2 {
       padding-left: 1em;
